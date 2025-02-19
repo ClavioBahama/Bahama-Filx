@@ -1,0 +1,333 @@
+/* Estilo Geral do Corpo do Site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Cor de fundo suave para todo o site */
+    color: #000000; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #7c0000; /* Cor de fundo vibrante para o cabeçalho */
+    color: #000000; /* Cor do texto no cabeçalho */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamanho do texto do título */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #000000; /* Cor do texto dos links de navegação */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #6a6969; /* Cor do texto ao passar o mouse */
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('imagem/4k-gaming-assassin-s-creed-syndicate-2nyg4foa3fa3130l.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    color: #000000;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 210px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Tamanho do texto do título */
+    margin-bottom: 12rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745; /* Cor de fundo do botão primário */
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+/* Carrossel de Jogos em Destaque */
+.carousel {
+    padding: 2rem;
+    background-color: #999; /*cor de fundo da seção do carrossel */
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.carousel h2 {
+    font-size: 2rem; /* Tamanho do texto do título */
+    margin-bottom: 1rem;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.carousel-prev,
+.carousel-next {
+    cursor: pointer;
+    background-color: #007bff; /* Cor de fundo dos controles do carrossel */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Lista de Jogos Populares */
+.games-list {
+    padding: 2rem;
+    background-color: #7c0000; /* Cor de fundo da lista de jogos */
+    margin: 2rem 0;
+}
+
+.games-list h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #000000; /* Cor do título da lista de jogos */
+}
+
+.game-card {
+    display: inline-block;
+    width: calc(25% - 2rem); /* Exibe 4 cards por linha */
+    margin: 1rem;
+    background-color: #f8f8f8; /* Cor de fundo dos cards */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Linha de separação inferior */
+}
+
+.game-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333; /* Cor do título do jogo */
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #666; /* Cor do texto descritivo */
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Cor de fundo do botão secundário */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo da Seção de Conta */
+.account {
+    padding: 2rem;
+    background-color: #e9ecef; /* Cor de fundo suave para a seção de conta */
+}
+
+.account-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Cor de fundo do container da conta */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+.account h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #007bff; /* Cor do título da seção de conta */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    border: 4px solid #007bff; /* Borda colorida para a imagem de perfil */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-details h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #007bff; /* Cor do nome do usuário */
+}
+
+.user-details p {
+    color: #555; /* Cor do texto descritivo do usuário */
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Cor de fundo do botão de edição */
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.account-settings {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.account-settings h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Cor dos títulos das configurações */
+    margin-bottom: 1rem;
+}
+
+.account-settings ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-settings li {
+    margin-bottom: 0.5rem;
+}
+
+.account-settings a {
+    color: #000000; /* Cor dos links das configurações */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.account-settings a:hover {
+    text-decoration: underline;
+    color: #000000; /* Cor do link ao passar o mouse */
+}
+
+.account-activity h3 {
+    font-size: 1.5rem;
+    color: #000000; /* Cor dos títulos da atividade */
+    margin-bottom: 1rem;
+}
+
+.account-activity ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-activity li {
+    margin-bottom: 0.5rem;
+}
+
+.btn-logout {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff0000; /* Cor de fundo do botão de logout */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Cor do botão ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
